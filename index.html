@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram Clone</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -13,7 +14,7 @@
             <i
               data-visualcompletion="css-img"
               aria-label="Instagram"
-              class 
+              class
               role="img"
               style="
                 background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yS/r/ajlEU-wEDyo.png');
@@ -28,18 +29,20 @@
           </div>
 
           <div class="loginform">
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Phone number, username, or email"
-            />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-            />
+            <div class="input">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Phone number, username, or email"
+              />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
             <button class="login">Log in</button>
             <div class="other">
               <hr />
@@ -50,18 +53,18 @@
               <img src="images/facebook-icon.png" alt="facebook icon" />
               <p>Log in with Facebook</p>
             </button>
+            <a href="#" class="forgot">Forgot password?</a>
           </div>
-          <a href="#" class="forgot">Forgot password?</a>
         </div>
 
         <div class="signup">
           <p>Don't have an account? <a href="#">Sign up</a></p>
+          <p>Get the app.</p>
         </div>
 
         <div class="app">
-          <p>Get the app.</p>
-          <a href="images/playstore.png"></a>
-          <a href="images/microsoft-store.png"></a>
+          <a href="#"><img src="images/playstore.png" alt="" /></a>
+          <a href="#"><img src="images/microsoft-store.png" alt="" /></a>
         </div>
       </article>
     </main>
