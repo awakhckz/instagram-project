@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -11,6 +11,14 @@ body {
     margin: auto;
     padding: 50px 0 0 0 ;
 }
+
+article.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
 a {
     text-decoration: none;
     outline: none;
@@ -26,7 +34,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    width: 50%;
+    width: 350px;
     padding: 4rem 0px 0px;
     margin: auto;
 }
@@ -37,7 +45,7 @@ a:hover {
     align-items: center;
     padding: 1rem;
     gap: 2rem;
-    width: 20rem;
+    width: 90%;
 }
 
 input {
@@ -49,20 +57,7 @@ input {
     padding-left: 10px;
 }
 
-label.email {
-    padding: 0 0 0 10px;
-    font-size: 10px;
-    position: absolute;
-    top: 10rem;
-    color: #9b9999;
-}
-label.password {
-    padding: 0 0 0 10px;
-    font-size: 10px;
-    position: absolute;
-    top: 14rem;
-    color: #9b9999;
-}
+
 input :active, :focus {
     border: 1px solid #9b9999;
     outline: none;
@@ -78,7 +73,7 @@ input :active, :focus {
 .login {
     width: 100%;
     height: 35px;
-    background-color: #557ff3;
+    background-color: #3063f1;
     color: #fff;
     font-size: 12px;
     font-weight: 750;
@@ -130,7 +125,8 @@ input :active, :focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
+    width: 350px;
+    padding: 2rem 0px;
     gap: 2rem;
 }
 
@@ -145,26 +141,29 @@ input :active, :focus {
 footer{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 4rem 6rem 4rem;
     gap: 1rem;
+}
+footer a {
+    color: #9b9999;
 }
 
 
 /* RESPONSIVENESS */
 
 @media screen and (min-width :426px){
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+    }
 .container {
-    border: 1px solid #9b9999;
+    border: 1px solid #bcb8b8b6;
+    margin: auto;
 }
-}
-    @media screen and (min-width :768px){
-    .loginform {
-        width: 400px;
-    }
-    input {
-        height: 70px;
-    }
-    ::placeholder {
-        padding-top: 40px;
-    }
+/* .signup {
+    border: 1px solid #bcb8b8b6;
+} */
 }
